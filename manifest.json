@@ -1,0 +1,9 @@
+{
+  "name": "",
+  "description": "単語の抽出",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
