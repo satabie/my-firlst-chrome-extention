@@ -1,0 +1,3 @@
+# wakati-search
+
+わかちサーチ
