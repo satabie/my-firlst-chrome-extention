@@ -11,4 +11,19 @@ form.addEventListener("submit", event => {
   // textarea要素のvalueプロパティにアクセスすることで、文字列を取得
   const text = textarea.value;
   console.log(text);
+
+  kuromoji.builder({ dicPath: "./dict" }).build(function (err, tokenizer) {
+    // tokenizer is ready
+    const tokens = tokenizer.tokenize(text);
+    let preprocessed_tokens = []
+    tokens.forEach((token) => {
+      if (token.pos === "名詞") {
+        preprocessed_tokens.push(token.surface_form);
+      }
+    });
+    console.log(tokens);
+    console.log(preprocessed_tokens);
+
+  });
 });
+
