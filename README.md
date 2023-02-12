@@ -1,3 +1,2 @@
 # wakati-search
-
-わかちサーチ
+自作chrome拡張 わかちサーチ
